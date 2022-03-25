@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+}
+
+.container-wallpaper img{
+  width: 100%;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.container-cabecalho {
+  width: 100%;
+  background-color: #C4C4C4;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.container-logo {
+  width: 100px;
+  margin:10px 10px;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  
+}
+
+.menu a {
+  height: 25px;
+  text-decoration: none;
+  background-color: rgb(139, 135, 135);
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+  box-shadow: 5px 5px 10px black;
+}
+
+main {
+  margin-top: 125px;
+}
+
+h1 {
+  text-align: center;
+  padding: 50px;
+}
+
+h2{
+  text-align: center;
+  padding: 50px;
+}
+
+.curiosidades {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+
+.curiosidades div {
+  background: white;
+  display: block;
+  width: 100%;
+}
+
+.curiosidades article {
+  text-align: center;
+  background-color: #999;
+  border-radius: 50px;
+  overflow: hidden;
+}
+.curiosidades article img {
+  width: 100%;
+}
+.curiosidades article p {
+  padding: 20px;
+}
+
+.caixa-video{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.texto-curiosidades{
+  text-align: center;
+}
+
+.texto-video{
+  text-align: center;
+}
+
+.rodape {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  background-color: #C4C4C4;
+}
+
+.rodape img {
+  width: 200px;
+}
+
+@media (min-width:320px) and (max-width: 768px) {
+  .curiosidades {
+    flex-direction: column;
+  }
+  .curiosidades div {
+    padding: 30px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .curiosidades div {
+    width: 30%;
+    display: inline-block;
+  }
+}
