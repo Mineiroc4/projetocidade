@@ -18,7 +18,7 @@ header {
 
 .container-cabecalho {
   width: 100%;
-  background-color: #C4C4C4;
+  background-color: #e4d9d9;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -35,43 +35,48 @@ header {
   flex-wrap: wrap;
   align-items: center;
   gap: 10px;
-  
 }
 
 .menu a {
-  height: 25px;
+  height: 20px;
   text-decoration: none;
   background-color: rgb(139, 135, 135);
   padding: 20px;
   border-radius: 10px;
   color: white;
   box-shadow: 5px 5px 10px black;
-}
+  }
 
 main {
   margin-top: 125px;
 }
 
+
 h1 {
   text-align: center;
   padding: 50px;
+  background-color: black;
+  color: white;
 }
 
 h2{
   text-align: center;
   padding: 50px;
+  background-color: #c4c4c4;
+  color: black;
 }
 
 .curiosidades {
   display: flex;
   align-items: flex-start;
-  justify-content: space-evenly;
 }
 
 .curiosidades div {
   background: white;
   display: block;
   width: 100%;
+  justify-content: space-evenly;
+  flex-direction: row;
 }
 
 .curiosidades article {
@@ -87,6 +92,10 @@ h2{
   padding: 20px;
 }
 
+.texto-video{
+  text-align: center;
+}
+
 .caixa-video{
   display: flex;
   justify-content: center;
@@ -97,15 +106,15 @@ h2{
   text-align: center;
 }
 
-.texto-video{
-  text-align: center;
-}
-
 .rodape {
   display: flex;
   text-align: center;
   justify-content: center;
-  background-color: #C4C4C4;
+  background-color: #e4d9d9;
+}
+
+.github{
+  margin: 6.5px;
 }
 
 .rodape img {
@@ -113,17 +122,52 @@ h2{
 }
 
 @media (min-width:320px) and (max-width: 768px) {
+  .menu{
+  flex-direction: column;
+  }
   .curiosidades {
     flex-direction: column;
   }
   .curiosidades div {
     padding: 30px;
   }
+  
+  .caixa-video{
+    padding:30px;
+  }
+
+  .texto-curiosidades{
+    width: 100%; 
+    padding-top: 30px;  
+  }
+
 }
 
-@media (min-width: 1280px) {
+@media (min-width:769px) and (max-width: 1280px) {
   .curiosidades div {
     width: 30%;
-    display: inline-block;
+    padding: 30px;
+  }
+  .curiosidades{
+    display: flex;
+    justify-content: space-evenly;
+  }
+ 
+  .caixa-video{
+    padding:30px;
+  }
+}
+
+@media (min-width: 1280px){
+  .curiosidades div{
+  width: 30%;
+  padding: 30px;
+  }
+  .curiosidades{
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .caixa-video{
+    padding:30px;
   }
 }
